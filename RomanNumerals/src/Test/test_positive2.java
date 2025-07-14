@@ -17,115 +17,43 @@ class test_positive2 {
 	void TC_9() {
 		assertEquals(9, test.convertRomanNumToInt("IX"));
 	}
-
+	
 	@Test
 	void TC_10() {
-		test.convertRomanNumToInt("IL");
-		fail();
+		test.convertRomanNumToInt("VX");
+		fail("Expected an exception for invalid input 'VX");
 	}
-
+	
 	@Test
 	void TC_11() {
-		test.convertRomanNumToInt("IC");
-		fail();
-	}
-	
-	@Test
-	void TC_12() {
-		test.convertRomanNumToInt("ID");
-		fail();
-	}
-	
-	@Test
-	void TC_13() {
-		test.convertRomanNumToInt("IM");
-		fail();
-	}
-	
-	@Test
-	void TC_14() {
-		test.convertRomanNumToInt("VX");
-		fail();
-	}
-	
-	@Test
-	void TC_15() {
-		test.convertRomanNumToInt("VL");
-		fail();
-	}
-	
-	@Test
-	void TC_16() {
-		test.convertRomanNumToInt("VC");
-		fail();
-	}
-	
-	@Test
-	void TC_17() {
-		test.convertRomanNumToInt("VD");
-		fail();
-	}
-	
-	@Test
-	void TC_18() {
-		test.convertRomanNumToInt("VM");
-		fail();
-	}
-	
-	@Test
-	void TC_19() {
 		assertEquals(40, test.convertRomanNumToInt("XL"));
 	}
 	
 	@Test
-	void TC_20() {
+	void TC_12() {
 		assertEquals(90, test.convertRomanNumToInt("XC"));
 	}
 	
 	@Test
-	void TC_21() {
-		test.convertRomanNumToInt("XD");
-		fail();
-	}
-	
-	@Test
-	void TC_22() {
-		test.convertRomanNumToInt("XM");
-		fail();
-	}
-	
-	@Test
-	void TC_23() {
+	void TC_13() {
 		test.convertRomanNumToInt("LC");
-		fail();
+		fail("Expected an exception for invalid input 'LC");
 	}
 	
 	@Test
-	void TC_24() {
-		test.convertRomanNumToInt("LD");
-		fail();
-	}
-	
-	@Test
-	void TC_25() {
-		test.convertRomanNumToInt("LM");
-		fail();
-	}
-	
-	@Test
-	void TC_26() {
+	void TC_14() {
 		assertEquals(400, test.convertRomanNumToInt("CD"));
 	}
 	
 	@Test
-	void TC_27() {
+	void TC_15() {
 		assertEquals(900, test.convertRomanNumToInt("CM"));
 	}
 	
 	@Test
-	void TC_28() {
+	void TC_16() {
 		test.convertRomanNumToInt("DM");
-        fail();
+        fail("Expected an exception for invalid input 'DM");
 	}
 
 }

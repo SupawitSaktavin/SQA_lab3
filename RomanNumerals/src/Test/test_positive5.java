@@ -9,22 +9,22 @@ class test_positive5 {
 	RomanNumerals test = new RomanNumerals();
 
 	@Test
-	void TC_54() {
+	void TC_27() {
 		assertEquals(3, test.convertRomanNumToInt("III"));
 	}
 	
 	@Test
-	void TC_55() {
+	void TC_28() {
 		assertEquals(30, test.convertRomanNumToInt("XXX"));
 	}
 	
 	@Test
-	void TC_56() {
+	void TC_29() {
 		assertEquals(300, test.convertRomanNumToInt("CCC"));
 	}
 	
 	@Test
-	void TC_57() {
+	void TC_30() {
 		assertEquals(3000, test.convertRomanNumToInt("MMM"));
 	}
 }
