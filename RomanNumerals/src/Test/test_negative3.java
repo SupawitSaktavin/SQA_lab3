@@ -10,9 +10,26 @@ class test_negative3 {
 
 	@Test
 	void TC_49() {
-		if (test.convertRomanNumToInt(null) != test.convertRomanNumToInt("VV")) {
-			fail();
-		}
+		test.convertRomanNumToInt("XXXX");
+		fail("Expected an exception for invalid input 'XXXX");
+	}
+	
+	@Test
+	void TC_50() {
+		test.convertRomanNumToInt("IIII");
+		fail("Expected an exception for invalid input 'IIII");
+	}
+	
+	@Test
+	void TC_51() {
+		test.convertRomanNumToInt("CCCC");
+		fail("Expected an exception for invalid input 'CCCC");
+	}
+	
+	@Test
+	void TC_52() {
+		test.convertRomanNumToInt("MMMM");
+		fail("Expected an exception for invalid input 'MMMM");
 	}
 
 }
