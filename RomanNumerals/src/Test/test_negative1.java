@@ -10,20 +10,32 @@ class test_negative1 {
 
 	@Test
 	void TC_40() {
-		test.convertRomanNumToInt("ABC");
-		fail("Expected an exception for invalid input 'ABC");
+		try {
+	        test.convertRomanNumToInt("ABC");
+	        fail("Expected exception for invalid input 'ABC'");
+	    } catch (NullPointerException  e) {
+
+	    }
 	}
 	
 	@Test
 	void TC_41() {
-		test.convertRomanNumToInt("J");
-		fail("Expected an exception for invalid input 'J");
+		try {
+	        test.convertRomanNumToInt("J");
+	        fail("Expected exception for invalid input 'J'");
+	    } catch (NullPointerException  e) {
+
+	    }
 	}
 	
 	@Test
 	void TC_42() {
-		test.convertRomanNumToInt("XZ");
-		fail("Expected an exception for invalid input 'XZ");
+		try {
+	        test.convertRomanNumToInt("XZ");
+	        fail("Expected exception for invalid input 'XZ'");
+	    } catch (NullPointerException  e) {
+
+	    }
 	}
 
 }
